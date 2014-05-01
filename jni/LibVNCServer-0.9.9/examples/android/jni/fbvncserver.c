@@ -459,7 +459,7 @@ void print_usage(char **argv)
 	printf("%s [-k device] [-t device] [-h]\n"
 		"-k device: keyboard device node, default is /dev/input/event3\n"
 		"-t device: touch device node, default is /dev/input/event1\n"
-		"-h : print this help\n");
+		"-h : print this help\n", argv[0]);
 }
 
 int main(int argc, char **argv)
@@ -495,8 +495,8 @@ int main(int argc, char **argv)
 	init_fb();
 	printf("Initializing keyboard device %s ...\n", KBD_DEVICE);
 	init_kbd();
-	printf("Initializing touch device %s ...\n", TOUCH_DEVICE);
-	init_touch();
+	//printf("Initializing touch device %s ...\n", TOUCH_DEVICE);
+	//init_touch();
 
 	printf("Initializing VNC server:\n");
 	printf("	width:  %d\n", (int)scrinfo.xres);
@@ -518,5 +518,5 @@ int main(int argc, char **argv)
 	printf("Cleaning up...\n");
 	cleanup_fb();
 	cleanup_kdb();
-	cleanup_touch();
+	//cleanup_touch();
 }
