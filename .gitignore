@@ -1,0 +1,12 @@
+*.swp
+*~
+*.o
+*.lo
+*.Plo
+*.la
+*.log
+CVS
+.deps/
+.libs/
+obj/
+libs/
