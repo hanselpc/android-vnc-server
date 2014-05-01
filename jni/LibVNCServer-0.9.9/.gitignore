@@ -73,3 +73,9 @@ x11vnc/x11vnc
 CMakeCache.txt
 cmake_install.cmake
 /CMakeFiles
+_install/
+tjbench
+tjunittest
+vncommand
+androidvncserver
+

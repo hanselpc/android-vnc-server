@@ -22,4 +22,4 @@ simd/jsimdcfg.inc
 tjbench
 tjunittest
 wrjpgcom
-jni/
+_install/
